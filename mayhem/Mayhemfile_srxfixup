@@ -1,0 +1,7 @@
+project: savantenvs/ps2sdk
+target: srxfixup
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/srxfixup/testsuite
+cmds:
+  - cmd: /mayhem/srxfixup --allow-zero-text --rb -m -o out @@
