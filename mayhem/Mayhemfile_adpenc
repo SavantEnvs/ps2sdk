@@ -1,0 +1,7 @@
+project: savantenvs/ps2sdk
+target: adpenc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/adpenc/testsuite
+cmds:
+  - cmd: /mayhem/adpenc @@ out

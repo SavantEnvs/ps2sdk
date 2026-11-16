@@ -1,0 +1,8 @@
+project: savantenvs/ps2sdk
+target: pack
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pack/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_pack
+    libfuzzer: true

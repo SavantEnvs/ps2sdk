@@ -1,0 +1,7 @@
+project: savantenvs/ps2sdk
+target: bin2s
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bin2s/testsuite
+cmds:
+  - cmd: /mayhem/bin2s @@ out label
